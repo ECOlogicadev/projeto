@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="postar.php" method="POST" enctype="multipart/form-data">
+  <label for="titulo">Título:</label>
+  <input type="text" id="titulo" name="titulo" required>
+
+  <label for="conteudo">Conteúdo:</label>
+  <textarea id="conteudo" name="conteudo" required></textarea>
+
+  <label for="imagem">Imagem (opcional):</label>
+  <input type="file" id="imagem" name="imagem" accept="image/*">
+
+  <button type="submit">Postar</button>
+</form>
+</body>
+</html>

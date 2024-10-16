@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .searchBox i {
+  position: absolute;
+  font-size: 27px;
+  left: 100%;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.searchBox i:hover {
+  background-color: #fff;
+  color: #597E52;
+  transition: .2s;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div class="searchBox">
+        <form action="consultar.php" method="GET" class="search-field">
+            <input type="text" name="query" placeholder="Buscar" required>
+            <button type="submit" class="bx bx-search search"></button>
+        </form>
+    </div>
+    
+</body>
+</html>
