@@ -1,0 +1,3 @@
+senha de lucas (admin com acesso a funcionalidades a mais): lucasjijas
+senha de kauan (conta visitante): kauan123
+nome do banco: ecologica
