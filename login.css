@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.caixa-login-cadastro {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    position: relative;
+}
+
+.abas {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.aba {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: #597E52;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.aba:hover {
+    background-color: #f1f1f1;
+}
+
+.aba.ativa {
+    color: #fff;
+    background-color: #597E52;
+}
+
+.formulario {
+    display: none;
+    padding: 20px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.formulario.ativo {
+    display: block;
+    opacity: 1;
+}
+
+.grupo-de-entrada {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.grupo-de-entrada label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5a5a5a;
+}
+
+.grupo-de-entrada input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline-color: #597E52;
+    color: #5a5a5a;
+}
+
+.grupo-de-entrada button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #597E52;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.grupo-de-entrada button:hover {
+    background-color: #4c6947;
+    transition: .3s;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #597E52;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #4c6947;
+    transition: .3s;
+}
+
+.ecologica {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 7%;
+}

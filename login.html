@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="login.css"> <!-- Referência ao CSS -->
+</head>
+<body>
+    <form id="form-login" method="POST" action="login.php" onsubmit="return validarLogin()">
+        <img src="logos/logo-transparente.png" alt="Logo Ecologica" class="ecologica">
+
+        <div class="caixa-login-cadastro">
+            <div id="login" class="formulario ativo">
+                <div class="grupo-de-entrada">
+                    <label for="email-login">Email:</label>
+                    <input type="email" id="email-login" name="email" required>
+                </div>
+                <div class="grupo-de-entrada">
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" name="senha" required>
+                    <button type="button" onclick="alternarSenha('senha-login')">Mostrar</button>
+                </div>
+                <button type="submit">Entrar</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function alternarSenha(id) {
+            const input = document.getElementById(id);
+            const tipo = input.type === 'password' ? 'text' : 'password';
+            input.type = tipo;
+            const botao = event.target;
+            botao.textContent = tipo === 'password' ? 'Mostrar' : 'Ocultar';
+        }
+
+        function validarLogin() {
+            var email = document.getElementById('email-login').value;
+            var senha = document.getElementById('senha-login').value;
+            
+            if (email === "" || senha === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false;  // Evita o envio do formulário se os campos estiverem vazios
+            }
+            return true;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('login').classList.add('ativo');
+        });
+    </script>
+</body>
+</html>

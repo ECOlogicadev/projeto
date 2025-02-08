@@ -1,0 +1,5 @@
+senha de lucas@gmail.com (admin com acesso à postagem e edição de notícias): lucas123
+senha de vini@gmail.com (admin com acesso à postagem e edição de notícias): vini123
+senha de kauan@gmail.com (conta visitante): kauan123
+senha de joao@gmail.com (conta visitante): joao123
+nome do banco de dados no mysql: ecologica

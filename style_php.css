@@ -1,0 +1,246 @@
+/* ================================ fontes importadas ================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Poppins', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin-top: 90px;
+  background-color: #f1f1f1;
+}
+h1 {
+  text-align: center;
+}
+
+p {
+  color: #5a5a5a;
+  text-align: center;
+}
+
+/* ================================ Cabeçalho ================================ */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #597E52;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.logo-cabecalho img {
+  width: 60px;
+  height: auto;
+  margin-top: 8px;
+}
+
+nav .nav-bar {
+  position: relative;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-bar a {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-links li a {
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px;
+  color: #fff;
+}
+
+nav li:hover {
+  padding-bottom: 8px;
+  transition: .2s;
+}
+
+nav li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 0%;
+  height: 2.7px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+nav a:hover::after{
+  width: 100%;
+  transition: .2s;
+}
+
+.searchBox {
+  position: relative;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox button {
+  background: none;
+  border: none;
+}
+
+.searchBox i {
+  position: relative;
+  font-size: 27px;
+  left: 100%;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.searchBox i {
+  top: 0px;
+  position: absolute;
+  font-size: 27px;
+  left: 100%;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.searchBox i:hover {
+  background-color: #fff;
+  color: #597E52;
+  transition: .2s;
+}
+
+.search-field input {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: #fff;
+  color: #5a5a5a;
+}
+
+.user .session {
+  position: relative;
+  font-size: 27px;
+  left: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.user i{
+  color: #fff;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.user i:hover {
+  background-color: #fff;
+  color: #597E52;
+  transition: .2s;
+}
+
+/* ========================== Estiliza a mensagem de cadastro ======================= */
+#mensagemCadastro {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#mensagemCadastro.success {
+  background-color: #f2f2f2;
+  color: #2fa04a;
+  border: 1px solid #009214;
+}
+
+#mensagemCadastro.error {
+  background-color:#f1f1f1;
+  color: #f10018;
+  border: 1px solid #7b0000;
+}
+/* Estilo para o modal */
+.user-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-modal {
+  display: none; 
+  position: absolute;
+  top: 110%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  z-index: 1000; 
+  opacity: 0;
+  transition: opacity .2s ease, visibility .2s ease; 
+}
+
+.user-container:hover .user-modal {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #597E52;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #4c6947;
+  transition: background-color .2s;
+}
